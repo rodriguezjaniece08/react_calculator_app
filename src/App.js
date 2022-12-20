@@ -34,10 +34,14 @@ import {
    
     function resetInput(e) { 
       // Add the code for the resetInput function 
+      e.preventDefault();
+      inputRef.current.value = 0;
     }; 
    
     function resetResult(e) { 
         // Add the code for the resetResult function 
+        e.preventDefault();
+        setResult((prevVal) => prevVal * 0);
     }; 
    
     return ( 
